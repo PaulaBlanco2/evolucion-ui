@@ -31,7 +31,6 @@ export class EvolucionesUi extends LitElement {
   }
 
   firstUpdated() {
-    // Escuchar el evento que trae los detalles del Pokémon
     this.addEventListener('pokemon-details-loaded', (e) => {
       this.pokemonDetails = e.detail.pokemonDetails;
       this.evolutions = e.detail.evolutions;
